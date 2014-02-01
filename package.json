@@ -1,0 +1,20 @@
+{
+  "name": "co-thread",
+  "version": "0.0.1",
+  "repository": "visionmedia/co-thread",
+  "description": "spawn multiple co 'threads'",
+  "main": "index.js",
+  "keywords": [
+    "co",
+    "thread",
+    "parallel"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "co": "~3.0.2",
+    "co-request": "~0.1.1",
+    "make-test": "~0.1.0",
+    "should": "~3.1.2",
+    "mocha": "~1.17.1"
+  }
+}
