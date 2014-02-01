@@ -11,7 +11,7 @@ $ npm install co-thread
 
 ## Example
 
-  Send a request in batches of `20` parallel GETs:
+  Send requests in batches of `20`:
 
 ```js
 var thread = require('co-thread');
@@ -23,11 +23,13 @@ co(function *(){
 
   while (times--) {
     yield thread(function *(){
-      var res = yield get('http://google.com');
-      console.log(res.statusCode);
+      var a = yield get('http://google.com');
+      console.log(a.statusCode);
+
+      var b = yield get('http://yahoo.com');
+      console.log(b.statusCode);
     }, 20);
   }
-
 })();
 ```
 
